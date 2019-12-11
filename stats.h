@@ -31,19 +31,21 @@
  * @brief A function that prints the statistics of an 
  * 		  
  * array including minimum, maximum, mean, and median
- * This function takes in 2 parameters first one being 
- * an unsigned char pointer to a pre-defined data array 
- * and second is an unsigned integer as the size of the 
- * array to print out mean, median, minimum and maximum.
+ * This function takes in 4 1 byte unsigned char as 
+ * parameters to print out mean, median, minimum and maximum.
  * 
- * @param unsigned char pointer which points and access 
+ * @param float median which takes the return
+ * value from the function find_median() 
  * the array elements
- * @param unsigned integer which gives size of array
- *
- * @return the values of mean, median, minimum and 
- * maximum.
+ * @param float mean which takes the return 
+ * value from the function find_mean()
+ * @param unsigned char max which takes the return
+ * value from the function find_maximum()
+ * @param unsigned char max which takes the return value
+ * from the function find_minimum()
+ * @displays the values of min, median, mini and max.
  */
-unsigned char print_statistics(unsigned char median, unsigned char mean, unsigned char max, unsigned char min);
+unsigned char print_statistics(float median, float mean, unsigned char max, unsigned char min);
 
 /**
  * @brief A function that prints the given array of  
@@ -65,9 +67,9 @@ unsigned char print_array(unsigned char* array, unsigned int size);
  * @param unsigned char pointer which points and access 
  * the array elements
  * @param unsigned integer which gives size of array
- * @return the median value from the given array set
+ * @return the median value(actual float value) from the given array set
  */
-unsigned char find_median(unsigned char* array, unsigned int size);
+float find_median(unsigned char* array, unsigned int size);
 
 /**
  * @brief A function that prints the mean value of a 
@@ -77,9 +79,9 @@ unsigned char find_median(unsigned char* array, unsigned int size);
  * @param unsigned char pointer which points and access 
  * the array elements
  * @param unsigned integer which gives size of array
- * @return the mean value from the given array set
+ * @return the mean value(actual float value) from the given array set
  */
-unsigned char find_mean(unsigned char* array, unsigned int size);
+float find_mean(unsigned char* array, unsigned int size);
 
 /**
  * @brief A function that prints the maximum value of 
