@@ -1,0 +1,16 @@
+#******************************************************************************
+# Copyright (C) 2017 by Abhinand
+#
+# Redistribution, modification or use of this software in source or binary
+# forms is permitted as long as the files maintain this copyright. Users are 
+# permitted to modify this and use it to learn about the field of embedded
+# software. Abhinand are not liable for any
+# misuse of this material. 
+#
+#*****************************************************************************
+
+# Add your Source files to this variable
+SRCS =	main.c \
+		misc.c
+
+
